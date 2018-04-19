@@ -17,7 +17,7 @@ xmlns:f="http://java.sun.com/jsf/core">
 	<h2>Room Results for <h:outputLabel value="#{roomSearch.name}"/></h2>
 	<h:form>
 	<h:inputText value="#{roomSearch.name}"/>
-	<h:commandButton value="Submit" action="search"/>
+	<h:commandButton value="Submit" action="#{searchRoom.execute()}"/>
 	</h:form>
 </h:body>
 </html>
